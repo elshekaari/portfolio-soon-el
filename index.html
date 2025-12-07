@@ -10,100 +10,24 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<style>
+body {
+  background-image: url('/Users/mac/Desktop/Screenshot\ 2025-12-07\ at\ 10.33.36.png 
+');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+<body>
 
-<!-- =========================
-     BACKGROUND SLIDESHOW
-========================= -->
-<div id="bg-wrap" aria-hidden="true">
-  <div class="bg-layer" id="layerA"></div>
-  <div class="bg-layer" id="layerB"></div>
-</div>
+<h2>Background Cover</h2>
 
-<!-- =========================
-     NAVIGATION
-========================= -->
-<header class="site-header">
-  <nav class="nav">
-    <a href="#" id="home-link" class="nav-link">Home</a>
-    <a href="#" id="works-link" class="nav-link">Works</a>
-    <a href="#" id="bio-link" class="nav-link">Bio & CV</a>
-    <a href="#" id="contact-link" class="nav-link">Contact</a>
-  </nav>
-</header>
+<p>Set the background-size property to "cover" and the background image will cover the entire element, in this case the body element.</p>
 
-<main id="app">
-
-  <!-- HOME -->
-  <section id="home" class="panel active">
-    <div class="center">
-      <h1 class="subtitle">My portfolio website is under construction ^^</h1>
-      <p class="title">EL SHEKARI </p>
-    </div>
-    <div class="socials-home">
-      <a href="https://www.instagram.com/elshekaari" target="_blank"><img src="icons/instagram.svg" alt="Instagram"></a>
-      <a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube.svg" alt="YouTube"></a>
-      <a href="https://vimeo.com/" target="_blank"><img src="icons/vimeo.svg" alt="Vimeo"></a>
-    </div>
-  </section>
-
-  <!-- WORKS MENU -->
-  <section id="works" class="panel">
-    <div class="panel-inner">
-      <h2>WORK</h2>
-      <nav class="works-nav">
-        <a href="#" id="painting-link" class="cat">Painting</a>
-        <a href="#" id="videoart-link" class="cat">Video Art</a>
-        <a href="#" id="installation-link" class="cat">Installation & Sculptures</a>
-      </nav>
-      <button class="btn back" id="works-back">← Back</button>
-    </div>
-  </section>
-
-  <!-- PAINTING -->
-  <section id="painting" class="panel">
-    <div class="panel-inner">
-      <h2>Painting</h2>
-      <div class="grid" id="paint-grid">
-        <!-- Replace with your painting images -->
-        <img src="works/painting1.jpg" alt="Painting 1">
-        <img src="works/painting2.jpg" alt="Painting 2">
-      </div>
-      <button class="btn back small" data-back="works">← Back to Works</button>
-    </div>
-  </section>
-
-  <!-- VIDEO ART -->
-  <section id="videoart" class="panel">
-    <div class="panel-inner">
-      <h2>Video Art</h2>
-      <div class="grid" id="video-grid">
-        <video controls preload="metadata" src="works/video1.mp4"></video>
-      </div>
-      <button class="btn back small" data-back="works">← Back to Works</button>
-    </div>
-  </section>
-
-  <!-- INSTALLATION & SCULPTURES -->
-  <section id="installation" class="panel">
-    <div class="panel-inner">
-      <h2>Installation & Sculptures</h2>
-      <div class="grid" id="inst-grid">
-        <img src="works/installation1.jpg" alt="Installation 1">
-      </div>
-      <button class="btn back small" data-back="works">← Back to Works</button>
-    </div>
-  </section>
-
-  <!-- BIO & CV -->
-  <section id="bio" class="panel">
-    <div class="panel-inner">
-      <h2>Bio & CV</h2>
-      <div class="bio-text">
-        <p><strong>El Shekari</strong> is a multidisciplinary artist working with video, painting, and installation. Replace this with your own bio and CV.</p>
-      </div>
-      <button class="btn back" data-back="home">← Back</button>
-    </div>
-  </section>
+</body>
+</html>
 
   <!-- CONTACT -->
   <section id="contact" class="panel">
