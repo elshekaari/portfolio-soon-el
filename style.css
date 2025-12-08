@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("background.jpeg"); /* replace with your file */
+    background-image: url("https://raw.githubusercontent.com/elshekaari/portfolio-soon-el/main/background.jpg");
     background-size: cover;                  /* fills screen without stretching */
     background-position: center;             /* keeps the center visible */
     background-repeat: no-repeat;
