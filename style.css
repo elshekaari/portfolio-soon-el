@@ -1,35 +1,40 @@
-/* Full-screen responsive background */
-body {
+/* Reset & full-height baseline */
+html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full-screen responsive background */
+body {
     background-image: url("https://i.ibb.co/7tCvMHb7/background.jpg");
     background-size: cover;                  /* fills screen without stretching */
     background-position: center;             /* keeps the center visible */
     background-repeat: no-repeat;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;
+    background-attachment: fixed;            /* keeps image fixed on scroll */
 
     font-family: "GB Garamond", "EB Garamond", serif;
 }
 
 /* Center container */
 .center {
-    height: 100vh;
-    width: 100vw;
+    min-height: 100vh;                        /* fill viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;                  /* vertical centering */
+    align-items: center;                      /* horizontal centering */
     text-align: center;
+    padding: 0 1rem;                          /* prevents overflow on very small screens */
 }
 
 /* Main text */
 .center h1 {
     color: #F9F6EE; /* bone white */
     font-size: 2rem;
-    margin-bottom: 20px;
+    margin: 0 0 20px 0;
     -webkit-text-stroke: 0.5px rgba(0,0,0,0.6); /* subtle outline */
-    text-align: center;
 }
 
 /* Signature link */
@@ -39,7 +44,6 @@ body {
     letter-spacing: 0.5px;
     text-decoration: none;
     -webkit-text-stroke: 0.5px rgba(0,0,0,0.65); /* subtle outline */
-    text-align: center;
 }
 
 /* Responsive adjustments for phones */
@@ -50,4 +54,10 @@ body {
     .center .signature {
         font-size: 1.2rem;
     }
+}
+
+/* Utility: if you need a fallback solid background color */
+body.fallback-bg {
+    background-image: none;
+    background-color: #0f0f12; /* dark fallback */
 }
