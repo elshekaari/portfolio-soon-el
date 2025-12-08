@@ -44,6 +44,12 @@ body {
     letter-spacing: 0.5px;
     text-decoration: none;
     -webkit-text-stroke: 0.5px rgba(0,0,0,0.65); /* subtle outline */
+
+    /* Underline for "EL SHEKARI" */
+    text-decoration: underline;
+    text-decoration-color: #F9F6EE;           /* match the text color */
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
 }
 
 /* Responsive adjustments for phones */
